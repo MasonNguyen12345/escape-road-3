@@ -80,6 +80,7 @@
     let loadedBytes = 0;
 
     async function fetchWithProgress(url) {
+	  console.log("Loading:", url);
       const response = await fetch(url);
       const reader = response.body.getReader();
       let chunks = [];
